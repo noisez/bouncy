@@ -76,7 +76,7 @@ section {
 
 .header {
   text-align: center;
-  background: url("../img/bg-header.png");
+  background: url("../img/bg-header_dark.jpg");
   background-size: cover;
   color: #ffffff;
   padding-bottom: 75px; }
@@ -390,6 +390,21 @@ section {
       .team .team__data .team__data-skills .skills__item .skills__item-name {
         float: left;
         margin-bottom: 7px; }
+
+.slider {
+  padding-bottom: 50px; }
+  .slider .slick-dots button:before {
+    opacity: 1;
+    transition: all .5s;
+    font-size: 10px;
+    color: #ffffff;
+    border: 1px solid #19bd9a;
+    border-radius: 50%; }
+  .slider .slick-dots button:hover:before {
+    color: #19bd9a; }
+  .slider .slick-dots .slick-active button:before {
+    color: #19bd9a;
+    opacity: 1; }
 
 .team__cta {
   margin-top: 100px;
