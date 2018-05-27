@@ -27,13 +27,3 @@ $(function(){
         */
     });
 });
-
-$('.slider').slick({
-    dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
-    arrows: false,
-    infinite: true,
-    speed: 1000,
-});
-

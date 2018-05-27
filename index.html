@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/Icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Bouncy</title>
 </head>
@@ -362,119 +360,132 @@
         <div class="container">
             <h3 class="section-title">THE TEAM</h3>
             <p class="section-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-            <div class="slider">
-                <div class="row justify-content-around slider-item d-flex">
-                    <div class="col-lg-4">
-                        <div class="team__img">
-                            <img src="img/team-photo1.png" alt="" class="team__photo">
-                            <div class="team__img-cover">
-                                <ul class="cover__social">
-                                    <a href="#"><li class="cover__social-item"><img src="img/inst.png" alt=""></li></a>
-                                    <a href="#"><li class="cover__social-item"><img class="big" src="img/fb.png" alt=""></li></a>
-                                    <a href="#"><li class="cover__social-item"><img src="img/tw.png" alt=""></li></a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="team__data text-right">
-                            <img class="vert-line" src="img/line-vertical.png" alt="">
-                            <p class="team__data-name">Abdullah Noman</p>
-                            <p class="team__data-position">Creative Director, Code Cafe</p>
-                            <p class="team__data-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                            <div class="team__data-skills">
-                                <div class="skills__item">
-                                    <span class="skills__item-name">BRANDING</span>
-                                    <span class="skills__item-perc">80 %</span>
-                                    <img src="img/team-line1.png" alt="">
-                                </div>
-                                <div class="skills__item">
-                                    <span class="skills__item-name">Web Design</span>
-                                    <span class="skills__item-perc">65 %</span>
-                                    <img src="img/team-line2.png" alt="">
-                                </div>
-                                <div class="skills__item">
-                                    <span class="skills__item-name">User Interface</span>
-                                    <span class="skills__item-perc">75 %</span>
-                                    <img src="img/team-line3.png" alt="">
+            <div class="carousel slide team-slider" id="team_slider" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#team_slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#team_slider" data-slide-to="1"></li>
+                    <li data-target="#team_slider" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-around">
+                            <div class="col-lg-4">
+                                <div class="team__img">
+                                    <img src="img/team-photo1.png" alt="" class="team__photo">
+                                    <div class="team__img-cover">
+                                        <ul class="cover__social">
+                                            <a href="#"><li class="cover__social-item"><img src="img/inst.png" alt=""></li></a>
+                                            <a href="#"><li class="cover__social-item"><img class="big" src="img/fb.png" alt=""></li></a>
+                                            <a href="#"><li class="cover__social-item"><img src="img/tw.png" alt=""></li></a>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-around class sld slider-item d-flex">
-                    <div class="col-lg-4">
-                        <div class="team__img">
-                            <img src="img/team-photo1.png" alt="" class="team__photo">
-                            <div class="team__img-cover">
-                                <ul class="cover__social">
-                                    <a href="#"><li class="cover__social-item"><img src="img/inst.png" alt=""></li></a>
-                                    <a href="#"><li class="cover__social-item"><img class="big" src="img/fb.png" alt=""></li></a>
-                                    <a href="#"><li class="cover__social-item"><img src="img/tw.png" alt=""></li></a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="team__data text-right">
-                            <img class="vert-line" src="img/line-vertical.png" alt="">
-                            <p class="team__data-name">Abdullah Noman</p>
-                            <p class="team__data-position">Creative Director, Code Cafe</p>
-                            <p class="team__data-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                            <div class="team__data-skills">
-                                <div class="skills__item">
-                                    <span class="skills__item-name">BRANDING</span>
-                                    <span class="skills__item-perc">80 %</span>
-                                    <img src="img/team-line1.png" alt="">
-                                </div>
-                                <div class="skills__item">
-                                    <span class="skills__item-name">Web Design</span>
-                                    <span class="skills__item-perc">65 %</span>
-                                    <img src="img/team-line2.png" alt="">
-                                </div>
-                                <div class="skills__item">
-                                    <span class="skills__item-name">User Interface</span>
-                                    <span class="skills__item-perc">75 %</span>
-                                    <img src="img/team-line3.png" alt="">
+                            <div class="col-lg-5">
+                                <div class="team__data text-right">
+                                    <img class="vert-line" src="img/line-vertical.png" alt="">
+                                    <p class="team__data-name">Abdullah Noman</p>
+                                    <p class="team__data-position">Creative Director, Code Cafe</p>
+                                    <p class="team__data-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                    <div class="team__data-skills">
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">BRANDING</span>
+                                            <span class="skills__item-perc">80 %</span>
+                                            <img src="img/team-line1.png" alt="">
+                                        </div>
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">Web Design</span>
+                                            <span class="skills__item-perc">65 %</span>
+                                            <img src="img/team-line2.png" alt="">
+                                        </div>
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">User Interface</span>
+                                            <span class="skills__item-perc">75 %</span>
+                                            <img src="img/team-line3.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-around class sld slider-item d-flex">
-                    <div class="col-lg-4">
-                        <div class="team__img">
-                            <img src="img/team-photo1.png" alt="" class="team__photo">
-                            <div class="team__img-cover">
-                                <ul class="cover__social">
-                                    <a href="#"><li class="cover__social-item"><img src="img/inst.png" alt=""></li></a>
-                                    <a href="#"><li class="cover__social-item"><img class="big" src="img/fb.png" alt=""></li></a>
-                                    <a href="#"><li class="cover__social-item"><img src="img/tw.png" alt=""></li></a>
-                                </ul>
+                    <div class="carousel-item">
+                        <div class="row justify-content-around">
+                            <div class="col-lg-4">
+                                <div class="team__img">
+                                    <img src="img/team-photo1.png" alt="" class="team__photo">
+                                    <div class="team__img-cover">
+                                        <ul class="cover__social">
+                                            <a href="#"><li class="cover__social-item"><img src="img/inst.png" alt=""></li></a>
+                                            <a href="#"><li class="cover__social-item"><img class="big" src="img/fb.png" alt=""></li></a>
+                                            <a href="#"><li class="cover__social-item"><img src="img/tw.png" alt=""></li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="team__data text-right">
+                                    <img class="vert-line" src="img/line-vertical.png" alt="">
+                                    <p class="team__data-name">Abdullah Noman</p>
+                                    <p class="team__data-position">Creative Director, Code Cafe</p>
+                                    <p class="team__data-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                    <div class="team__data-skills">
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">BRANDING</span>
+                                            <span class="skills__item-perc">80 %</span>
+                                            <img src="img/team-line1.png" alt="">
+                                        </div>
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">Web Design</span>
+                                            <span class="skills__item-perc">65 %</span>
+                                            <img src="img/team-line2.png" alt="">
+                                        </div>
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">User Interface</span>
+                                            <span class="skills__item-perc">75 %</span>
+                                            <img src="img/team-line3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="team__data text-right">
-                            <img class="vert-line" src="img/line-vertical.png" alt="">
-                            <p class="team__data-name">Abdullah Noman</p>
-                            <p class="team__data-position">Creative Director, Code Cafe</p>
-                            <p class="team__data-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                            <div class="team__data-skills">
-                                <div class="skills__item">
-                                    <span class="skills__item-name">BRANDING</span>
-                                    <span class="skills__item-perc">80 %</span>
-                                    <img src="img/team-line1.png" alt="">
+                    <div class="carousel-item">
+                        <div class="row justify-content-around">
+                            <div class="col-lg-4">
+                                <div class="team__img">
+                                    <img src="img/team-photo1.png" alt="" class="team__photo">
+                                    <div class="team__img-cover">
+                                        <ul class="cover__social">
+                                            <a href="#"><li class="cover__social-item"><img src="img/inst.png" alt=""></li></a>
+                                            <a href="#"><li class="cover__social-item"><img class="big" src="img/fb.png" alt=""></li></a>
+                                            <a href="#"><li class="cover__social-item"><img src="img/tw.png" alt=""></li></a>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="skills__item">
-                                    <span class="skills__item-name">Web Design</span>
-                                    <span class="skills__item-perc">65 %</span>
-                                    <img src="img/team-line2.png" alt="">
-                                </div>
-                                <div class="skills__item">
-                                    <span class="skills__item-name">User Interface</span>
-                                    <span class="skills__item-perc">75 %</span>
-                                    <img src="img/team-line3.png" alt="">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="team__data text-right">
+                                    <img class="vert-line" src="img/line-vertical.png" alt="">
+                                    <p class="team__data-name">Abdullah Noman</p>
+                                    <p class="team__data-position">Creative Director, Code Cafe</p>
+                                    <p class="team__data-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                    <div class="team__data-skills">
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">BRANDING</span>
+                                            <span class="skills__item-perc">80 %</span>
+                                            <img src="img/team-line1.png" alt="">
+                                        </div>
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">Web Design</span>
+                                            <span class="skills__item-perc">65 %</span>
+                                            <img src="img/team-line2.png" alt="">
+                                        </div>
+                                        <div class="skills__item">
+                                            <span class="skills__item-name">User Interface</span>
+                                            <span class="skills__item-perc">75 %</span>
+                                            <img src="img/team-line3.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -492,7 +503,7 @@
         </div>
     </section>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
