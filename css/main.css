@@ -107,12 +107,16 @@ section {
     font-size: 35px;
     font-weight: 300; }
   .header .arrow {
-    margin-top: 220px; }
+    transition: opacity .5s ease;
+    margin-top: 220px;
+    opacity: 0; }
     .header .arrow .pe-7s-angle-down {
       padding: 5px;
       border-radius: 50%;
       background-color: #19bd9a;
       font-size: 30px; }
+  .header:hover .arrow {
+    opacity: 1; }
 
 .about {
   padding-bottom: 60px; }
@@ -324,11 +328,12 @@ section {
     .portfolio .portfolio__cta .portfolio__cta-text {
       margin-bottom: 30px; }
 
-.team .team-slider .carousel-indicators {
-  bottom: -80px; }
-  .team .team-slider .carousel-indicators .active {
+.carousel-indicators {
+  bottom: -75px; }
+  .carousel-indicators .active {
     background-color: #19bd9a; }
-  .team .team-slider .carousel-indicators li {
+  .carousel-indicators li {
+    transition: all .5s ease;
     border: 1px solid #19bd9a;
     border-radius: 50%;
     height: 10px;
@@ -348,7 +353,7 @@ section {
     top: 0;
     background-color: rgba(255, 255, 255, 0);
     margin: 7px;
-    transition: all .5s ease; }
+    transition: all .2s ease; }
     .team .team__img .team__img-cover .cover__social {
       margin-left: 65px;
       margin-top: 160px;
@@ -425,3 +430,22 @@ section {
     background: url("../img/bg-team_cta.png") no-repeat;
     background-size: cover;
     opacity: .2; }
+
+.testi {
+  background-color: #f3f3f3;
+  padding-bottom: 100px; }
+  .testi .testi_slider {
+    background-color: #ffffff;
+    padding-bottom: 100px; }
+    .testi .testi_slider .carousel-indicators {
+      bottom: 50px; }
+    .testi .testi_slider .testi__name {
+      line-height: 20px;
+      color: #19bd9a;
+      font-weight: 700;
+      margin-bottom: 5px;
+      letter-spacing: 0.04em; }
+    .testi .testi_slider .testi__position {
+      line-height: 20px;
+      color: #464646;
+      letter-spacing: 0.04em; }
