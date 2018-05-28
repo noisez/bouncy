@@ -76,7 +76,7 @@ section {
 
 .header {
   text-align: center;
-  background: url("../img/bg-header_dark.jpg");
+  background: url("../img/bg-header_dark.jpg") no-repeat center;
   background-size: cover;
   color: #ffffff;
   padding-bottom: 75px; }
@@ -158,11 +158,11 @@ section {
   .projects .projects__text {
     margin-bottom: 60px; }
   .projects .projects__item-1 {
-    background: url("../img/bg-project-1.png") no-repeat; }
+    background: url("../img/bg-project-1.png") no-repeat center; }
   .projects .projects__item-2 {
-    background: url("../img/bg2-project-2.png") no-repeat; }
+    background: url("../img/bg2-project-2.png") no-repeat center; }
   .projects .projects__item-3 {
-    background: url("../img/bg2-project-3.png") no-repeat; }
+    background: url("../img/bg2-project-3.png") no-repeat center; }
   .projects .projects__item {
     background-color: #19bd9a;
     height: 320px;
@@ -181,7 +181,7 @@ section {
         .projects .projects__item .projects__item-cover:hover h4 {
           visibility: hidden; }
   .projects .projects__footer {
-    background: url("../img/bg-projects-footer.png") no-repeat;
+    background: url("../img/bg-projects-footer.png") no-repeat center;
     background-size: cover; }
     .projects .projects__footer p {
       color: #ffffff;
@@ -240,7 +240,7 @@ section {
       background: url("../img/Ellipse-3.png") no-repeat; }
 
 .impres {
-  background: url("../img/bg-impres.png") no-repeat;
+  background: url("../img/bg-impres.png") no-repeat center;
   background-size: cover;
   margin-top: 115px;
   padding-bottom: 80px; }
@@ -324,7 +324,7 @@ section {
   .portfolio .portfolio__cta {
     margin-top: 35px;
     padding: 52px 0;
-    background: url("../img/bg-portfolio-cta.png") no-repeat; }
+    background: url("../img/bg-portfolio-cta.png") no-repeat center; }
     .portfolio .portfolio__cta .portfolio__cta-text {
       margin-bottom: 30px; }
 
@@ -427,7 +427,7 @@ section {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/bg-team_cta.png") no-repeat;
+    background: url("../img/bg-team_cta.png") no-repeat center;
     background-size: cover;
     opacity: .2; }
 
@@ -436,6 +436,7 @@ section {
   padding-bottom: 100px; }
   .testi .testi_slider {
     background-color: #ffffff;
+    padding-top: 50px;
     padding-bottom: 100px; }
     .testi .testi_slider .carousel-indicators {
       bottom: 50px; }
