@@ -1,0 +1,93 @@
+.team
+  .team__img
+    position: relative
+    width: 285px
+    &:hover
+      .team__img-cover
+        background-color: rgba(255,255,255,.75)
+        .cover__social
+          .cover__social-item
+            opacity: 1
+    .team__img-cover
+      height: 350px
+      width: 271px
+      position: absolute
+      top: 0
+      background-color: rgba(255,255,255,0)
+      margin: 7px
+      transition: all .2s ease
+      .cover__social
+        margin-left: 65px
+        margin-top: 160px
+        display: flex
+        .cover__social-item
+          background-color: rgba(1,1,1,.9)
+          opacity: 0
+          border-radius: 50%
+          margin-left: 10px
+          transition: all .5s ease
+          img
+            padding: 8px
+          .big
+            padding: 8px 13px
+  .team__data
+    padding-top: 25px
+    text-align: right
+    position: relative
+    padding-right: 45px
+    .vert-line
+      position: absolute
+      top: 32px
+      right: 1px
+    .team__data-name
+      margin-bottom: 5px
+      font-size: 20px
+      color: #464646
+    .team__data-position
+      font-family: 'Source Sans Pro', sans-serif
+      font-size: 14px
+      text-transform: uppercase
+      font-weight: 300
+      font-style: italic
+      color: #81868e
+    .team__data-text
+      margin-bottom: 12px
+    .team__data-skills
+      float: right
+      width: 330px
+      .skills__item
+        margin-top: 15px
+        letter-spacing: 0.1em
+        font-family: 'Source Sans Pro', sans-serif
+        font-size: 16px
+        font-weight: 300
+        color: #81868e
+        text-transform: uppercase
+        .skills__item-name
+          float: left
+
+.team__cta
+  margin-top: 150px
+  padding: 55px 0
+  background-color: $black
+  height: 200px
+  position: relative
+  text-align: center
+  .team__cta-text
+    position: relative
+    z-index: 1000
+    color: $white
+    font-size: 20px
+    letter-spacing: 0.04em
+    margin-bottom: 25px
+  .team__cta-btn
+    position: relative
+    z-index: 1000
+  .team__cta-cover
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background: url("../img/bg-team_cta.png") no-repeat center
+    background-size: cover
+    opacity: .2

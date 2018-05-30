@@ -2,6 +2,7 @@
 //     alert( "тик" );
 // }, 2000);
 
+
 $(function(){
     $('a[href^="#"]').on('click', function(event) {
         // отменяем стандартное действие
@@ -26,4 +27,9 @@ $(function(){
         * 1000 скорость перехода в миллисекундах
         */
     });
+});
+
+$(".blog__btn").click(function () {
+    $(".blog__item1").css("top","-617px");
+    $(".blog__item2").css("top","-617px");
 });

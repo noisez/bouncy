@@ -1,0 +1,44 @@
+.projects
+  text-align: center
+  .projects__text
+    margin-bottom: 60px
+  .projects__item-1
+    background: url("../img/bg-project-1.png") no-repeat center
+  .projects__item-2
+    background: url("../img/bg2-project-2.png") no-repeat center
+  .projects__item-3
+    background: url("../img/bg2-project-3.png") no-repeat center
+  .projects__item
+    background-color: $green
+    height: 320px
+    background-size: cover
+    .projects__item-cover
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,.85)
+      transition: all 1s ease
+      h4
+        font-size: 20px
+        color: #d3d3d3
+        line-height: 320px
+      &:hover
+        opacity: 0
+        h4
+          visibility: hidden
+  .projects__footer
+    background: url("../img/bg-projects-footer.png") no-repeat center
+    background-size: cover
+    p
+      color: $white
+      font-size: 20px
+    .projects__footer-cover
+      padding: 40px 100px
+      display: flex
+      justify-content: space-around
+      background: rgba(25, 189, 154, .85)
+      p
+        margin-top: 7px
+        span
+          font-weight: 700
+      a
+        height: 42px

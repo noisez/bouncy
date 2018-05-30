@@ -1,0 +1,45 @@
+.header
+  text-align: center
+  h1, p
+    color: $white
+  background: url("../img/bg-header_dark.jpg") no-repeat center
+  background-size: cover
+  color: $white
+  padding-bottom: 75px
+  .bouncy
+    font-family: 'BigJohn', sans-serif
+    font-size: 25px
+    margin-top: 37px
+    text-align: left
+  .menu
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .menu__item
+      border-radius: 20px
+      padding: 0 15px
+      border: 1px hidden $white
+      a
+        color: $white
+    .last
+      padding-right: 0
+    .active
+      border-style: solid
+
+  .header__title
+    margin: 200px 0 30px
+    font-size: 35px
+    font-weight: 300
+  .arrow
+    transition: opacity .5s ease
+    margin-top: 220px
+    opacity: 0
+    .pe-7s-angle-down
+      padding: 5px
+      border-radius: 50%
+      background-color: $green
+      font-size: 30px
+  &:hover
+    .arrow
+      opacity: 1
