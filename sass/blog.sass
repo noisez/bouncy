@@ -6,6 +6,7 @@
   background: url("../img/bg-news.jpg") no-repeat center
   background-size: cover
   .blog__btns
+    z-index: 10
     position: absolute
     top: 315px
     right: 90px
@@ -33,7 +34,7 @@
     .section-subtitle
       color: #b2b3b3
     .blog__item-article
-      width: 600px
+      max-width: 600px
       margin-left: 70px
       .article-title
         color: #e1e4e9
@@ -62,7 +63,7 @@
   .blog__item2
     .blog__video
       position: relative
-      padding-bottom: 44.4%
+      padding-bottom: 44.3%
       padding-top: 30px
       height: 0
       overflow: hidden
@@ -79,3 +80,9 @@
   .blog__item3
     .section-title
       margin-top: 90px
+
+@media screen and (max-width: 767px)
+  .blog
+    .blog__item
+      .blog__item-article
+        margin-left: 0

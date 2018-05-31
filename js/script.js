@@ -29,6 +29,16 @@ $(function(){
     });
 });
 
+$('#menu__icon').click(function () {
+    let nav = $('#myTopnav')
+    if (nav.hasClass('responsive')) {
+        nav.removeClass('responsive');
+    }
+    else {
+        nav.addClass('responsive');
+    }
+});
+
 let count = 1;
 let pos = 0;
 $(".btn-1").click(function () {
@@ -51,4 +61,9 @@ $(".btn-3").click(function () {
     $('.btn-1').removeClass('active');
     $('.btn-2').removeClass('active');
     $('.btn-3').addClass('active');
+});
+
+$('.menu__item').click(function () {
+    $('.menu-active').removeClass('menu-active');
+    $(this).addClass('menu-active');
 });

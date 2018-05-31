@@ -1,3 +1,5 @@
+nav
+  position: relative
 .header
   text-align: center
   h1, p
@@ -11,21 +13,26 @@
     font-size: 25px
     margin-top: 37px
     text-align: left
+    margin-bottom: 35px
   .menu
     margin-top: 40px
     display: flex
-    justify-content: center
     flex-wrap: wrap
+    justify-content: flex-end
     .menu__item
       border-radius: 20px
-      padding: 0 15px
-      border: 1px hidden $white
+      padding: 0 13px
+      border: 1px solid rgba(255, 255, 255, 0)
       a
         color: $white
-    .last
-      padding-right: 0
-    .active
-      border-style: solid
+    .menu__icon
+      display: none
+      position: relative
+      top: -6px
+      a
+        font-size: 25px
+    .menu-active
+      border-color: rgba(255, 255, 255, 1)
 
   .header__title
     margin: 200px 0 30px
@@ -43,3 +50,19 @@
   &:hover
     .arrow
       opacity: 1
+
+@media screen and (max-width: 767px)
+  .header
+    .menu
+      .menu__item
+        display: none
+      .menu__icon
+        display: block
+      &.responsive
+        position: absolute
+        flex-direction: column
+        justify-content: flex-start
+        right: 22.5px
+        height: 200px
+        .menu__item
+          display: block
