@@ -29,7 +29,26 @@ $(function(){
     });
 });
 
-$(".blog__btn").click(function () {
-    $(".blog__item1").css("top","-617px");
-    $(".blog__item2").css("top","-617px");
+let count = 1;
+let pos = 0;
+$(".btn-1").click(function () {
+    pos = 0;
+    $('.blog__item').css('top', pos+'px');
+    $('.btn-1').addClass('active');
+    $('.btn-2').removeClass('active');
+    $('.btn-3').removeClass('active');
+});
+$(".btn-2").click(function () {
+    pos = -692;
+    $('.blog__item').css('top', pos+'px');
+    $('.btn-1').removeClass('active');
+    $('.btn-2').addClass('active');
+    $('.btn-3').removeClass('active');
+});
+$(".btn-3").click(function () {
+    pos = -1384;
+    $('.blog__item').css('top', pos+'px');
+    $('.btn-1').removeClass('active');
+    $('.btn-2').removeClass('active');
+    $('.btn-3').addClass('active');
 });
