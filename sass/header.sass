@@ -1,6 +1,7 @@
 nav
   position: relative
 .header
+  height: 745px
   text-align: center
   h1, p
     color: $white
@@ -11,9 +12,9 @@ nav
   .bouncy
     font-family: 'BigJohn', sans-serif
     font-size: 25px
-    margin-top: 37px
-    text-align: left
-    margin-bottom: 35px
+    margin-top: 31px
+    display: inline-block
+    padding-bottom: 9px
   .menu
     margin-top: 40px
     display: flex
@@ -25,14 +26,14 @@ nav
       border: 1px solid rgba(255, 255, 255, 0)
       a
         color: $white
+      &:hover
+        border-color: rgba(255, 255, 255, 1)
     .menu__icon
       display: none
       position: relative
       top: -6px
       a
         font-size: 25px
-    .menu-active
-      border-color: rgba(255, 255, 255, 1)
 
   .header__title
     margin: 200px 0 30px
@@ -40,7 +41,7 @@ nav
     font-weight: 300
   .arrow
     transition: opacity .5s ease
-    margin-top: 220px
+    margin-top: 200px
     opacity: 0
     .pe-7s-angle-down
       padding: 5px
@@ -54,6 +55,7 @@ nav
 @media screen and (max-width: 767px)
   .header
     .menu
+      margin-bottom: 0
       .menu__item
         display: none
       .menu__icon

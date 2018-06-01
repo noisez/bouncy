@@ -1,12 +1,72 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300|Source+Sans+Pro:300,400,700");
 @font-face {
   font-family: BigJohn;
   src: url("../fonts/Big John  Slim Joe/BIG_JOHN.otf"); }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
+  font-weight: 900;
+  font-style: normal; }
 
 nav {
   position: relative; }
 
 .header {
+  height: 745px;
   text-align: center;
   background: url("../img/bg-header_dark.jpg") no-repeat center;
   background-size: cover;
@@ -17,9 +77,9 @@ nav {
   .header .bouncy {
     font-family: 'BigJohn', sans-serif;
     font-size: 25px;
-    margin-top: 37px;
-    text-align: left;
-    margin-bottom: 35px; }
+    margin-top: 31px;
+    display: inline-block;
+    padding-bottom: 9px; }
   .header .menu {
     margin-top: 40px;
     display: flex;
@@ -31,21 +91,21 @@ nav {
       border: 1px solid rgba(255, 255, 255, 0); }
       .header .menu .menu__item a {
         color: #ffffff; }
+      .header .menu .menu__item:hover {
+        border-color: white; }
     .header .menu .menu__icon {
       display: none;
       position: relative;
       top: -6px; }
       .header .menu .menu__icon a {
         font-size: 25px; }
-    .header .menu .menu-active {
-      border-color: white; }
   .header .header__title {
     margin: 200px 0 30px;
     font-size: 35px;
     font-weight: 300; }
   .header .arrow {
     transition: opacity .5s ease;
-    margin-top: 220px;
+    margin-top: 200px;
     opacity: 0; }
     .header .arrow .pe-7s-angle-down {
       padding: 5px;
@@ -56,18 +116,20 @@ nav {
     opacity: 1; }
 
 @media screen and (max-width: 767px) {
-  .header .menu .menu__item {
-    display: none; }
-  .header .menu .menu__icon {
-    display: block; }
-  .header .menu.responsive {
-    position: absolute;
-    flex-direction: column;
-    justify-content: flex-start;
-    right: 22.5px;
-    height: 200px; }
-    .header .menu.responsive .menu__item {
-      display: block; } }
+  .header .menu {
+    margin-bottom: 0; }
+    .header .menu .menu__item {
+      display: none; }
+    .header .menu .menu__icon {
+      display: block; }
+    .header .menu.responsive {
+      position: absolute;
+      flex-direction: column;
+      justify-content: flex-start;
+      right: 22.5px;
+      height: 200px; }
+      .header .menu.responsive .menu__item {
+        display: block; } }
 
 .about {
   background-color: #ffffff;
@@ -477,6 +539,84 @@ nav {
 @media screen and (max-width: 767px) {
   .blog .blog__item .blog__item-article {
     margin-left: 0; } }
+
+.price {
+  padding-bottom: 100px; }
+  .price__item {
+    background-color: #ffffff;
+    height: 300px;
+    width: 235px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 0px #e7e7e7;
+    margin: 5px auto;
+    position: relative; }
+    .price__item_name {
+      font-size: 20px;
+      font-weight: 700;
+      background-color: #19bd9a;
+      color: #ffffff;
+      padding: 18px 0; }
+    .price__item_price {
+      font-size: 42px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 900;
+      color: #19bd9a;
+      margin-top: 65px; }
+    .price__item_time {
+      font-size: 20px; }
+    .price__item_cover {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff;
+      transition: all .5s ease;
+      opacity: 0; }
+      .price__item_cover:hover {
+        opacity: 1; }
+      .price__item_cover .cover__list {
+        font-size: 14px;
+        text-align: left;
+        padding: 35px 34px;
+        height: 236px;
+        color: #81868e;
+        margin-bottom: 0; }
+        .price__item_cover .cover__list_item {
+          margin-bottom: 8px; }
+      .price__item_cover .cover__btn {
+        display: block;
+        background-color: #19bd9a;
+        font-size: 16px;
+        padding: 10px 0 20px 0; }
+        .price__item_cover .cover__btn i {
+          font-size: 30px;
+          position: relative;
+          top: 8px; }
+
+.subscribe {
+  background: url("../img/bg-subscribe.jpg") no-repeat center;
+  background-size: cover;
+  height: 378px;
+  text-align: center; }
+  .subscribe h3 {
+    color: #ffffff; }
+  .subscribe__form {
+    display: inline-block;
+    margin: 0 auto; }
+  .subscribe__email {
+    background-color: rgba(255, 255, 255, 0);
+    height: 40px;
+    max-width: 360px;
+    border: 1px solid #81868e;
+    padding: 20px 240px 20px 20px;
+    color: #ffffff; }
+    .subscribe__email::placeholder {
+      color: #ffffff; }
+  .subscribe__submit {
+    background-color: #19bd9a;
+    height: 42px;
+    border: none;
+    padding: 8px 45px;
+    color: #ffffff; }
 
 body {
   font-family: 'Open Sans', sans-serif;

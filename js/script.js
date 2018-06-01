@@ -64,6 +64,6 @@ $(".btn-3").click(function () {
 });
 
 $('.menu__item').click(function () {
-    $('.menu-active').removeClass('menu-active');
-    $(this).addClass('menu-active');
+    $('.menu__current').removeClass('menu__current');
+    $(this).addClass('menu__current');
 });
