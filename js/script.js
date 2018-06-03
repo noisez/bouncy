@@ -62,8 +62,3 @@ $(".btn-3").click(function () {
     $('.btn-2').removeClass('active');
     $('.btn-3').addClass('active');
 });
-
-$('.menu__item').click(function () {
-    $('.menu__current').removeClass('menu__current');
-    $(this).addClass('menu__current');
-});
