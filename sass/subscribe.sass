@@ -15,6 +15,7 @@
     border: 1px solid #81868e
     padding: 20px
     color: $white
+    margin-bottom: 10px
     &::placeholder
       color: $white
       font-size: 14px
@@ -25,3 +26,8 @@
     padding: 8px 45px
     color: $white
     cursor: pointer
+
+@media screen and (max-width: 576px)
+  .subscribe
+    &__email
+      width: 95%

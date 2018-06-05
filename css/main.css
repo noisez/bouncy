@@ -27,12 +27,6 @@
   font-style: normal; }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Regular.ttf");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
   font-family: "Source Sans Pro";
   src: url("../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
   font-weight: 300;
@@ -72,7 +66,7 @@ nav {
   background-size: cover;
   color: #ffffff;
   padding-bottom: 75px; }
-  .header h1, .header p {
+  .header h1, .header h2, .header p {
     color: #ffffff; }
   .header .bouncy {
     font-family: 'BigJohn', sans-serif;
@@ -143,6 +137,14 @@ nav {
     border: 1px solid #333b46;
     color: #333b46; }
 
+@media screen and (max-width: 992px) {
+  .about__img {
+    margin-top: 70px; } }
+
+@media screen and (max-width: 768px) {
+  .about .section-subtitle {
+    margin-left: 0; } }
+
 .details {
   text-align: center; }
   .details .details__title {
@@ -197,20 +199,23 @@ nav {
           visibility: hidden; }
   .projects .projects__footer {
     background: url("../img/bg-projects-footer.png") no-repeat center;
-    background-size: cover; }
+    background-size: cover;
+    height: 113px; }
     .projects .projects__footer p {
       color: #ffffff;
-      font-size: 20px; }
+      font-size: 20px;
+      height: 68px; }
     .projects .projects__footer .projects__footer-cover {
-      padding: 40px 100px;
+      overflow: hidden;
       display: flex;
       justify-content: space-around;
       background: rgba(25, 189, 154, 0.85); }
       .projects .projects__footer .projects__footer-cover p {
-        margin-top: 7px; }
+        margin-top: 30px; }
         .projects .projects__footer .projects__footer-cover p span {
           font-weight: 700; }
       .projects .projects__footer .projects__footer-cover a {
+        margin-top: 23px;
         height: 42px; }
 
 .services .services__description {
@@ -275,6 +280,10 @@ nav {
     right: 0;
     top: -113px; }
 
+@media screen and (max-width: 992px) {
+  .impres .impres__imac {
+    top: -50px; } }
+
 .portfolio {
   text-align: center;
   padding-bottom: 100px; }
@@ -283,15 +292,17 @@ nav {
   .portfolio .portfolio__menu {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     flex-wrap: wrap; }
-    .portfolio .portfolio__menu .portfolio__menu-item a {
-      color: #464646;
-      font-size: 16px;
-      padding: 10px;
-      border-bottom: 2px solid #f3f3f3; }
-      .portfolio .portfolio__menu .portfolio__menu-item a:hover {
-        border-bottom: 2px solid #19bd9a; }
+    .portfolio .portfolio__menu .portfolio__menu-item {
+      margin-bottom: 10px; }
+      .portfolio .portfolio__menu .portfolio__menu-item a {
+        color: #464646;
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 2px solid #f3f3f3; }
+        .portfolio .portfolio__menu .portfolio__menu-item a:hover {
+          border-bottom: 2px solid #19bd9a; }
   .portfolio img {
     padding: 5px; }
   .portfolio .portfolio__photo {
@@ -350,7 +361,8 @@ nav {
   background-color: #ffffff; }
   .team .team__img {
     position: relative;
-    width: 285px; }
+    width: 285px;
+    margin-bottom: 15px; }
     .team .team__img:hover .team__img-cover {
       background-color: rgba(255, 255, 255, 0.75); }
       .team .team__img:hover .team__img-cover .cover__social .cover__social-item {
@@ -378,13 +390,12 @@ nav {
           .team .team__img .team__img-cover .cover__social .cover__social-item .big {
             padding: 8px 13px; }
   .team .team__data {
-    padding-top: 25px;
+    padding-right: 45px;
     text-align: right;
     position: relative;
-    padding-right: 45px; }
+    max-width: 375px; }
     .team .team__data .vert-line {
       position: absolute;
-      top: 32px;
       right: 1px; }
     .team .team__data .team__data-name {
       margin-bottom: 5px;
@@ -400,8 +411,7 @@ nav {
     .team .team__data .team__data-text {
       margin-bottom: 12px; }
     .team .team__data .team__data-skills {
-      float: right;
-      width: 330px; }
+      float: right; }
       .team .team__data .team__data-skills .skills__item {
         margin-top: 15px;
         letter-spacing: 0.1em;
@@ -438,6 +448,12 @@ nav {
     background: url("../img/bg-team_cta.png") no-repeat center;
     background-size: cover;
     opacity: .2; }
+
+@media screen and (max-width: 375px) {
+  .team .team__data {
+    padding-right: 0; }
+    .team .team__data .vert-line {
+      display: none; } }
 
 .testi {
   padding-bottom: 100px; }
@@ -609,7 +625,8 @@ nav {
     width: 360px;
     border: 1px solid #81868e;
     padding: 20px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 10px; }
     .subscribe__email::placeholder {
       color: #ffffff;
       font-size: 14px; }
@@ -620,6 +637,10 @@ nav {
     padding: 8px 45px;
     color: #ffffff;
     cursor: pointer; }
+
+@media screen and (max-width: 576px) {
+  .subscribe__email {
+    width: 95%; } }
 
 .contact .col-xl-3, .contact .col-lg-10 {
   padding: 0;
@@ -709,6 +730,18 @@ nav {
   .contact .contact__map iframe {
     width: 100%;
     height: 100%; }
+
+@media screen and (max-width: 1200px) {
+  .form__container .contact__form_message, .form__container .contact__form_submit {
+    width: 78.5%; } }
+
+@media screen and (max-width: 992px) {
+  .form__container .contact__form_message, .form__container .contact__form_submit {
+    width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  .form__container .contact__form_message, .form__container .contact__form_submit {
+    width: 100%; } }
 
 .footer {
   height: 290px;
@@ -814,9 +847,6 @@ section {
   transition: all .5s; }
   .pe7-icon:hover {
     background-color: #19bd9a; }
-
-.even {
-  justify-content: space-evenly; }
 
 .no-padding {
   padding: 0; }

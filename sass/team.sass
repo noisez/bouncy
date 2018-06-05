@@ -3,6 +3,7 @@
   .team__img
     position: relative
     width: 285px
+    margin-bottom: 15px
     &:hover
       .team__img-cover
         background-color: rgba(255,255,255,.75)
@@ -32,13 +33,12 @@
           .big
             padding: 8px 13px
   .team__data
-    padding-top: 25px
+    padding-right: 45px
     text-align: right
     position: relative
-    padding-right: 45px
+    max-width: 375px
     .vert-line
       position: absolute
-      top: 32px
       right: 1px
     .team__data-name
       margin-bottom: 5px
@@ -55,7 +55,6 @@
       margin-bottom: 12px
     .team__data-skills
       float: right
-      width: 330px
       .skills__item
         margin-top: 15px
         letter-spacing: 0.1em
@@ -92,3 +91,10 @@
     background: url("../img/bg-team_cta.png") no-repeat center
     background-size: cover
     opacity: .2
+
+@media screen and (max-width: 375px)
+  .team
+    .team__data
+      padding-right: 0
+      .vert-line
+        display: none
