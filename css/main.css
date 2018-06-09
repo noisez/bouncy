@@ -218,6 +218,12 @@ nav {
         margin-top: 23px;
         height: 42px; }
 
+.services__icons li:nth-child(3) a i {
+  padding: 10px 11.5px; }
+
+.services__icons li:nth-child(4) a i {
+  padding: 10px 13px; }
+
 .services .services__description {
   margin-left: 20px; }
   .services .services__description p {
@@ -362,6 +368,7 @@ nav {
   .team .team__img {
     position: relative;
     width: 285px;
+    margin: 0 auto;
     margin-bottom: 15px; }
     .team .team__img:hover .team__img-cover {
       background-color: rgba(255, 255, 255, 0.75); }
@@ -449,7 +456,7 @@ nav {
     background-size: cover;
     opacity: .2; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 426px) {
   .team .team__data {
     padding-right: 0; }
     .team .team__data .vert-line {
@@ -461,6 +468,8 @@ nav {
     background-color: #ffffff;
     padding-top: 50px;
     padding-bottom: 100px; }
+    .testi .testi_slider .testi__img {
+      margin-bottom: 20px; }
     .testi .testi_slider .carousel-indicators {
       bottom: 50px; }
     .testi .testi_slider .testi__name {
@@ -554,8 +563,16 @@ nav {
     margin-top: 90px; }
 
 @media screen and (max-width: 767px) {
+  .blog .blog__btns {
+    right: 10px; }
   .blog .blog__item .blog__item-article {
     margin-left: 0; } }
+
+@media screen and (max-width: 350px) {
+  .blog .blog__item .blog__item-article .article-socials {
+    margin-bottom: 10px; }
+  .blog .blog__item3 .section-title {
+    margin-top: 50px; } }
 
 .price {
   padding-bottom: 100px; }
@@ -567,6 +584,10 @@ nav {
     box-shadow: 1px 1px 1px 0 #e7e7e7;
     margin: 5px auto;
     position: relative; }
+    .price__item:hover .price__item_cover {
+      opacity: 1; }
+      .price__item:hover .price__item_cover .cover__btn {
+        top: 236px; }
     .price__item_name {
       font-size: 20px;
       font-weight: 700;
@@ -582,28 +603,30 @@ nav {
     .price__item_time {
       font-size: 20px; }
     .price__item_cover {
+      transition: opacity 1s ease;
       position: absolute;
-      height: 100%;
       width: 100%;
+      height: 100%;
       background-color: #ffffff;
-      transition: all .5s ease;
       opacity: 0; }
-      .price__item_cover:hover {
-        opacity: 1; }
       .price__item_cover .cover__list {
         font-size: 14px;
         text-align: left;
         padding: 35px 34px;
-        height: 236px;
         color: #81868e;
         margin-bottom: 0; }
         .price__item_cover .cover__list_item {
           margin-bottom: 8px; }
       .price__item_cover .cover__btn {
+        transition: all .5s ease;
+        position: absolute;
+        top: 80px;
+        left: 0;
         display: block;
         background-color: #19bd9a;
         font-size: 16px;
-        padding: 10px 0 20px 0; }
+        width: 100%;
+        padding: 10px 30px 20px; }
         .price__item_cover .cover__btn i {
           font-size: 30px;
           position: relative;
@@ -644,7 +667,7 @@ nav {
 
 .contact .col-xl-3, .contact .col-lg-10 {
   padding: 0;
-  margin: 0 20px 10px; }
+  margin: 0 20px 20px; }
 
 .contact__item {
   box-shadow: 1px 1px 1px 0 #e7e7e7;
@@ -652,7 +675,10 @@ nav {
   width: 285px;
   height: 273px;
   background-color: #ffffff;
-  margin: auto; }
+  margin: auto;
+  transition: all .5s ease; }
+  .contact__item:hover {
+    transform: scale(1.1); }
   .contact__item p {
     text-transform: uppercase; }
     .contact__item p:first-child {
@@ -754,6 +780,8 @@ nav {
       font-family: 'BigJohn', sans-serif;
       font-size: 25px;
       color: #323a45; }
+      .footer__info_bouncy:hover {
+        color: #323a45; }
     .footer__info_credits {
       margin-bottom: 35px; }
     .footer__info_social .social_icons {
@@ -831,7 +859,10 @@ section {
 .btn {
   padding: 8px 30px;
   border-radius: 20px;
-  border: 1px solid #ffffff; }
+  border: 1px solid #ffffff;
+  transition: all .5s ease; }
+  .btn:hover {
+    transform: scale(1.2); }
 
 .cta {
   color: #ffffff;
