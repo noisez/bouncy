@@ -100,13 +100,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-md-12">
-                    <div class="projects__footer">
-                        <div class="projects__footer-cover">
-                            <p>At vero eos et <span>accusamus</span> et iusto odio dignissimos ducimus qui blanditiis</p>
-                            <a href="#" class="btn">Submit Now</a>
-                        </div>
+            <div class="projects__footer">
+                <div class="row">
+                    <div class="col-xl-10">
+                        <p>At vero eos et <span>accusamus</span> et iusto odio dignissimos ducimus qui blanditiis</p>
+                    </div>
+                    <div class="col-xl-2">
+                        <a href="#" class="btn">Submit Now</a>
                     </div>
                 </div>
             </div>
@@ -169,21 +169,22 @@
             <h3 class="section-title">THE PORTFOLIO</h3>
             <p class="section-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</p>
             <ul class="portfolio__menu">
-                <li class="portfolio__menu-item"><a href="#">All Works</a></li>
-                <li class="portfolio__menu-item"><a href="#">Print</a></li>
-                <li class="portfolio__menu-item"><a href="#">Identity</a></li>
-                <li class="portfolio__menu-item"><a href="#">Branding</a></li>
-                <li class="portfolio__menu-item"><a href="#">Web</a></li>
-                <li class="portfolio__menu-item"><a href="#">HTML</a></li>
-                <li class="portfolio__menu-item"><a href="#">Wordpress</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('all')">All Works</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('print')">Print</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('identity')">Identity</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('branding')">Branding</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('web')">Web</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('html')">HTML</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('wordpress')">Wordpress</a></li>
             </ul>
             <div class="row no-gutters">
                 <div class="col-lg-3 col-sm-6">
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo print web">
                         <img src="img/portfolio1-1.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -192,11 +193,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo identity html">
                         <img src="img/portfolio2-1.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -205,11 +207,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo branding wordpress">
                         <img src="img/portfolio3-1.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -220,11 +223,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo print wordpress">
                         <img src="img/portfolio1-2.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -233,11 +237,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo identity web">
                         <img src="img/portfolio2-2.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -246,11 +251,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo branding html">
                         <img src="img/portfolio3-2.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -261,11 +267,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo print html">
                         <img src="img/portfolio1-3.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -274,11 +281,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo identity wordpress">
                         <img src="img/portfolio2-3.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -287,11 +295,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo branding web">
                         <img src="img/portfolio3-3.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -302,11 +311,12 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo print web">
                         <img src="img/portfolio1-4.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -315,11 +325,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo identity html">
                         <img src="img/portfolio2-4.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -328,11 +339,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__photo">
+                    <div class="portfolio__photo branding wordpress">
                         <img src="img/portfolio3-4.jpg" class="img-fluid" alt="">
                         <div class="portfolio__photo-cover">
                             <div class="photo__cover-content">
                                 <p class="content__title">Title here</p>
+                                <img src="img/hor-line.png" alt="">
                                 <p class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                                 <ul class="content__icons">
                                     <li class="content__icons-item"><a href="#"><i class="pe-7s-link"></i></a></li>
@@ -366,7 +378,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row justify-content-around">
-                            <div class="col-md-4 col-12">
+                            <div class="col-md-6 col-12">
                                 <div class="team__img">
                                     <img src="img/team-photo1.jpg" alt="" class="img-fluid">
                                     <div class="team__img-cover">
@@ -378,7 +390,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-10">
+                            <div class="col-md-6 d-flex justify-content-center col-8">
                                 <div class="team__data">
                                     <img class="vert-line" src="img/line-vertical.png" alt="">
                                     <p class="team__data-name">Abdullah Noman</p>
@@ -407,7 +419,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row justify-content-around">
-                            <div class="col-md-4 col-12">
+                            <div class="col-md-6 col-12">
                                 <div class="team__img">
                                     <img src="img/team-photo1.jpg" alt="" class="team__photo">
                                     <div class="team__img-cover">
@@ -419,7 +431,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-10">
+                            <div class="col-md-6 d-flex justify-content-center col-8">
                                 <div class="team__data">
                                     <img class="vert-line" src="img/line-vertical.png" alt="">
                                     <p class="team__data-name">Abdullah Noman</p>
@@ -448,7 +460,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row justify-content-around">
-                            <div class="col-md-4 col-12">
+                            <div class="col-md-6 col-12">
                                 <div class="team__img">
                                     <img src="img/team-photo1.jpg" alt="" class="team__photo">
                                     <div class="team__img-cover">
@@ -460,7 +472,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-10">
+                            <div class="col-md-6 d-flex justify-content-center col-8">
                                 <div class="team__data">
                                     <img class="vert-line" src="img/line-vertical.png" alt="">
                                     <p class="team__data-name">Abdullah Noman</p>
@@ -579,7 +591,7 @@
                 <h3 class="section-title">LATEST Videos</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 <div class="blog__video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1kfUnvvRvMM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VZS_sB1sBaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="blog__item blog__item3">
@@ -601,8 +613,8 @@
         <div class="container">
             <h3 class="section-title">Our Price</h3>
             <p class="section-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6">
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-4 col-md-6">
                     <div class="price__item">
                         <div class="price__item_cover">
                             <ul class="cover__list">
@@ -622,7 +634,7 @@
                         <p class="price__item_time">Per Month</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="price__item">
                         <div class="price__item_cover">
                             <ul class="cover__list">
@@ -642,7 +654,7 @@
                         <p class="price__item_time">Per Month</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="price__item">
                         <div class="price__item_cover">
                             <ul class="cover__list">
@@ -670,7 +682,7 @@
             <h3 class="section-title">Subscribe us</h3>
             <p class="section-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             <form action="" class="subscribe__form">
-                <input type="email" class="subscribe__email" placeholder="Email Address">
+                <input type="email" class="subscribe__email" required placeholder="Email Address">
                 <button type="submit" class="subscribe__submit">SUBMIT</button>
             </form>
         </div>
@@ -722,16 +734,16 @@
                 <form action="" class="contact__form">
                     <div class="row justify-content-center">
                         <div class="col-xl-3 col-md-5">
-                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="Your name" required>
                         </div>
                         <div class="col-xl-3 col-md-5">
-                            <input type="email" placeholder="Email address">
+                            <input type="email" placeholder="Email address" required>
                         </div>
                         <div class="col-xl-3 col-md-5">
-                            <input type="text" placeholder="Subject">
+                            <input type="text" placeholder="Subject" required>
                         </div>
                     </div>
-                    <textarea class="contact__form_message"></textarea>
+                    <textarea class="contact__form_message" required></textarea>
                     <button type="submit" class="contact__form_submit">SUBMIT NOW</button>
                 </form>
             </div>
@@ -743,7 +755,8 @@
                     <a href="#"><i class="pe-7s-angle-down cover__info_arrow"></i></a>
                 </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10148.863571009495!2d30.50191335799501!3d50.5115496737707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e1c39f41cecdd46!2zVGhpcyBJcyDQn9C40LLQsdCw0YA!5e0!3m2!1sru!2sua!4v1528059360620" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map" id="map"></div>
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10148.863571009495!2d30.50191335799501!3d50.5115496737707!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e1c39f41cecdd46!2zVGhpcyBJcyDQn9C40LLQsdCw0YA!5e0!3m2!1sru!2sua!4v1528059360620" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
         </div>
     </section>
     <footer class="footer">
@@ -759,6 +772,22 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function initMap() {
+            var uluru = {lat: 50.47555, lng: 30.4965609};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn5VjxCEkpWL9cUqxLJNWz40CTjebsM94&callback=initMap">
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

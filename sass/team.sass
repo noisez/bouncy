@@ -41,6 +41,7 @@
     .vert-line
       position: absolute
       right: 1px
+      top: 6px
     .team__data-name
       margin-bottom: 5px
       font-size: 20px
@@ -93,9 +94,25 @@
     background-size: cover
     opacity: .2
 
-@media screen and (max-width: 426px)
+@media screen and (max-width: 767px)
   .team
     .team__data
       padding-right: 0
       .vert-line
-        display: none
+        right: -7px
+        top: 7px
+
+@media screen and (max-width: 510px)
+  .team .col-8
+    flex: 0 0 69%
+    max-width: 69%
+
+@media screen and (max-width: 480px)
+  .team .col-8
+    flex: 0 0 79%
+    max-width: 79%
+
+@media screen and (max-width: 390px)
+  .team .col-8
+    flex: 0 0 95%
+    max-width: 95%

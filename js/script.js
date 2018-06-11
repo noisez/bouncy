@@ -1,7 +1,35 @@
-// let timerId = setInterval(function() {
-//     alert( "тик" );
-// }, 2000);
-
+function portfSwitch(arg) {
+    let a = arg;
+    switch(a) {
+        case 'all':
+            $('.portfolio__photo').css('display', 'block');
+            break;
+        case 'print':
+            $('.portfolio__photo').css('display', 'none');
+            $('.print').css('display', 'block');
+            break;
+        case 'identity':
+            $('.portfolio__photo').css('display', 'none');
+            $('.identity').css('display', 'block');
+            break;
+        case 'branding':
+            $('.portfolio__photo').css('display', 'none');
+            $('.branding').css('display', 'block');
+            break;
+        case 'web':
+            $('.portfolio__photo').css('display', 'none');
+            $('.web').css('display', 'block');
+            break;
+        case 'html':
+            $('.portfolio__photo').css('display', 'none');
+            $('.html').css('display', 'block');
+            break;
+        case 'wordpress':
+            $('.portfolio__photo').css('display', 'none');
+            $('.wordpress').css('display', 'block');
+            break;
+    }
+};
 
 $(function(){
     $('a[href^="#"]').on('click', function(event) {
