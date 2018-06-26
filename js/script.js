@@ -38,7 +38,7 @@ function portfSwitch(arg) {
             $('.wordpress').show();
             break;
     }
-    $('.grid').masonry('layout');
+    $('.portfolio__grid').masonry('layout');
 }
 
 $(function(){
