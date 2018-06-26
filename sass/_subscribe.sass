@@ -1,0 +1,33 @@
+.subscribe
+  background: url("../img/bg-subscribe.jpg") no-repeat center
+  background-size: cover
+  height: 378px
+  text-align: center
+  h3
+    color: $white
+  &__form
+    display: inline-block
+    margin: 0 auto
+  &__email
+    background-color: rgba(255,255,255,0)
+    height: 40px
+    width: 360px
+    border: 1px solid #81868e
+    padding: 20px
+    color: $white
+    margin-bottom: 10px
+    &::placeholder
+      color: $white
+      font-size: 14px
+  &__submit
+    background-color: $green
+    height: 42px
+    border: none
+    padding: 8px 45px
+    color: $white
+    cursor: pointer
+
+@media screen and (max-width: 576px)
+  .subscribe
+    &__email
+      width: 95%

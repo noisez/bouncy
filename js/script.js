@@ -1,35 +1,57 @@
+$( document ).ready(function() {
+    $('.portfolio__grid').masonry({
+        isFitWidth: true,
+        gutter: 5,
+        columnWidth: 270,
+        itemSelector: '.grid-item'
+    });
+});
+
+function initMap() {
+    var uluru = {lat: 50.47555, lng: 30.4965609};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}
+
 function portfSwitch(arg) {
     let a = arg;
     switch(a) {
         case 'all':
-            $('.portfolio__photo').css('display', 'block');
+            $('.portfolio__photo').show();
             break;
         case 'print':
-            $('.portfolio__photo').css('display', 'none');
-            $('.print').css('display', 'block');
+            $('.portfolio__photo').hide();
+            $('.print').show();
             break;
         case 'identity':
-            $('.portfolio__photo').css('display', 'none');
-            $('.identity').css('display', 'block');
+            $('.portfolio__photo').hide();
+            $('.identity').show();
             break;
         case 'branding':
-            $('.portfolio__photo').css('display', 'none');
-            $('.branding').css('display', 'block');
+            $('.portfolio__photo').hide();
+            $('.branding').show();
             break;
         case 'web':
-            $('.portfolio__photo').css('display', 'none');
-            $('.web').css('display', 'block');
+            $('.portfolio__photo').hide();
+            $('.web').show();
             break;
         case 'html':
-            $('.portfolio__photo').css('display', 'none');
-            $('.html').css('display', 'block');
+            $('.portfolio__photo').hide();
+            $('.html').show();
             break;
         case 'wordpress':
-            $('.portfolio__photo').css('display', 'none');
-            $('.wordpress').css('display', 'block');
+            $('.portfolio__photo').hide();
+            $('.wordpress').show();
             break;
     }
-};
+    $('.grid').masonry('layout');
+}
 
 $(function(){
     $('a[href^="#"]').on('click', function(event) {

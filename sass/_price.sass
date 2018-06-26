@@ -1,0 +1,58 @@
+.price
+  padding-bottom: 70px
+  &__item
+    background-color: $white
+    height: 300px
+    width: 235px
+    text-align: center
+    box-shadow: 1px 1px 1px 0 rgba(231,231,231,1)
+    margin: 0 auto 30px
+    position: relative
+    &:hover
+      .price__item_cover
+        opacity: 1
+        .cover__btn
+          top: 236px
+    &_name
+      font-size: 20px
+      font-weight: 700
+      background-color: $green
+      color: $white
+      padding: 18px 0
+    &_price
+      font-size: 42px
+      font-family: "Source Sans Pro", sans-serif
+      font-weight: 900
+      color: $green
+      margin-top: 65px
+    &_time
+      font-size: 20px
+    &_cover
+      transition: opacity 1s ease
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: $white
+      opacity: 0
+      .cover__list
+        font-size: 14px
+        text-align: left
+        padding: 35px 34px
+        color: #81868e
+        margin-bottom: 0
+        &_item
+          margin-bottom: 8px
+      .cover__btn
+        transition: all .5s ease
+        position: absolute
+        top: 80px
+        left: 0
+        display: block
+        background-color: $green
+        font-size: 16px
+        width: 100%
+        padding: 10px 30px 20px
+        i
+          font-size: 30px
+          position: relative
+          top: 8px

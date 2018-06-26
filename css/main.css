@@ -307,10 +307,13 @@ nav {
           border-bottom: 2px solid #19bd9a; }
       .portfolio .portfolio__menu .portfolio__menu-item .current {
         border-bottom: 2px solid #19bd9a; }
+  .portfolio .portfolio__grid {
+    margin: auto; }
+    .portfolio .portfolio__grid .grid-item {
+      margin-bottom: 5px; }
   .portfolio .portfolio__photo {
     position: relative;
-    max-width: 270px;
-    margin: 7px 4px; }
+    max-width: 270px; }
     .portfolio .portfolio__photo .portfolio__photo-cover {
       position: absolute;
       top: 0;
@@ -357,18 +360,6 @@ nav {
     background: url("../img/bg-portfolio-cta.png") no-repeat center; }
     .portfolio .portfolio__cta .portfolio__cta-text {
       margin-bottom: 30px; }
-
-@media screen and (max-width: 991px) {
-  .portfolio .portfolio__photo {
-    margin: 7px auto; } }
-
-@media screen and (max-width: 767px) {
-  .portfolio .portfolio__photo {
-    margin: 7px 4px; } }
-
-@media screen and (max-width: 576px) {
-  .portfolio .portfolio__photo {
-    margin: 7px auto; } }
 
 .team {
   background-color: #ffffff; }

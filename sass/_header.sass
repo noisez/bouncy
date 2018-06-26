@@ -1,0 +1,71 @@
+nav
+  position: relative
+.header
+  height: 745px
+  text-align: center
+  h1, h2, p
+    color: $white
+  background: url("../img/bg-header_dark.jpg") no-repeat center
+  background-size: cover
+  color: $white
+  padding-bottom: 75px
+  .bouncy
+    font-family: 'BigJohn', sans-serif
+    font-size: 25px
+    margin-top: 31px
+    display: inline-block
+    padding-bottom: 9px
+  .menu
+    margin-top: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    .menu__item
+      border-radius: 20px
+      padding: 0 13px
+      border: 1px solid rgba(255, 255, 255, 0)
+      a
+        color: $white
+      &:hover
+        border-color: rgba(255, 255, 255, 1)
+    .menu__icon
+      display: none
+      position: relative
+      top: -6px
+      a
+        font-size: 25px
+
+  .header__title
+    margin: 200px 0 30px
+    font-size: 35px
+    font-weight: 300
+  .header__text
+    margin-bottom: 200px
+  .arrow
+    transition: opacity .5s ease
+    opacity: 0
+    .pe-7s-angle-down
+      padding: 5px
+      border-radius: 50%
+      background-color: $green
+      font-size: 30px
+  &:hover
+    .arrow
+      opacity: 1
+
+@media screen and (max-width: 767px)
+  .header
+    .menu
+      margin-bottom: 0
+      .menu__item
+        display: none
+      .menu__icon
+        display: block
+      &.responsive
+        position: absolute
+        flex-direction: column
+        justify-content: flex-start
+        right: 22.5px
+        height: 200px
+        .menu__item
+          display: block
