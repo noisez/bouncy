@@ -1,5 +1,6 @@
 nav
   position: relative
+  display: inline-block
 .header
   height: 745px
   text-align: center
@@ -9,6 +10,9 @@ nav
   background-size: cover
   color: $white
   padding-bottom: 75px
+  &__top
+    display: flex
+    justify-content: space-between
   .bouncy
     font-family: 'BigJohn', sans-serif
     font-size: 25px
@@ -25,8 +29,8 @@ nav
       border: 1px solid rgba(255, 255, 255, 0)
       a
         color: $white
-      &:hover
-        border-color: rgba(255, 255, 255, 1)
+    .menu-current
+      border-color: rgba(255, 255, 255, 1)
     .menu__icon
       display: none
       position: relative

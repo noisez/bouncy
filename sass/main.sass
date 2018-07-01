@@ -20,7 +20,7 @@ $green: #19bd9a
 
 body
   font-family: 'Open Sans', sans-serif
-  background: url("../img/bg-main.png")
+  background: url("../img/bg-main.jpg")
   overflow-x: hidden
 ul
   padding: 0
@@ -68,6 +68,9 @@ section
   border-radius: 20px
   border: 1px solid $white
   transition: all .5s ease
+  &:hover
+    background-color: $white
+    color: $green
 
 .cta
   color: $white
@@ -80,9 +83,11 @@ section
   border-radius: 50%
   background-color: #81868e
   color: $white
-  transition: all .5s
+  transition: all .5s ease
   &:hover
-    background-color: $green
+    transform: scale(1.1)
+.current-icon
+  background-color: $green
 
 .no-padding
   padding: 0

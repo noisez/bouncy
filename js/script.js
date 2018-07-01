@@ -1,6 +1,7 @@
-$( document ).ready(function() {
+$(document).ready(function() {
     $('.portfolio__grid').masonry({
         isFitWidth: true,
+        horizontalOrder: true,
         gutter: 5,
         columnWidth: 270,
         itemSelector: '.grid-item'
@@ -8,34 +9,47 @@ $( document ).ready(function() {
 });
 
 function portfSwitch(arg) {
-    let a = arg;
-    switch(a) {
-        case 'all':
+    switch(arg) {
+        case 'All Works':
             $('.portfolio__photo').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(All Works)" ).addClass('portfolio__menu-current');
             break;
-        case 'print':
+        case 'Print':
             $('.portfolio__photo').hide();
             $('.print').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(Print)" ).addClass('portfolio__menu-current');
             break;
-        case 'identity':
+        case 'Identity':
             $('.portfolio__photo').hide();
             $('.identity').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(Identity)" ).addClass('portfolio__menu-current');
             break;
-        case 'branding':
+        case 'Branding':
             $('.portfolio__photo').hide();
             $('.branding').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(Branding)" ).addClass('portfolio__menu-current');
             break;
-        case 'web':
+        case 'Web':
             $('.portfolio__photo').hide();
             $('.web').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(Web)" ).addClass('portfolio__menu-current');
             break;
-        case 'html':
+        case 'HTML':
             $('.portfolio__photo').hide();
             $('.html').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(HTML)" ).addClass('portfolio__menu-current');
             break;
-        case 'wordpress':
+        case 'Wordpress':
             $('.portfolio__photo').hide();
             $('.wordpress').show();
+            $('.portfolio__menu-current').removeClass('portfolio__menu-current');
+            $( "a:contains(Wordpress)" ).addClass('portfolio__menu-current');
             break;
     }
     $('.portfolio__grid').masonry('layout');
@@ -65,6 +79,13 @@ $(function(){
         * 1000 скорость перехода в миллисекундах
         */
     });
+});
+
+$('.pe7-icon').click(function () {
+    $('.current-icon').removeClass('current-icon');
+    console.log(this);
+    $(this).addClass('current-icon');
+
 });
 
 $('#menu__icon').click(function () {

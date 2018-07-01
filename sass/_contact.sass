@@ -11,13 +11,14 @@
     margin: 10px auto
     transition: all .5s ease
     &:hover
-      transform: scale(1.25)
+      transform: scale(1.15)
+      box-shadow: #81868e 0 2px 12px 3px
     p
       text-transform: uppercase
       &:first-child
         color: #333b46
     &_img
-      background: url("../img/contact-email.png") no-repeat center
+      background: url("../img/contact-email.jpg") no-repeat center
       background-size: cover
       width: 285px
       height: 145px
@@ -55,6 +56,9 @@
       border: none
       color: $white
       cursor: pointer
+      transition: all .5s ease
+      &:hover
+        background-color: #1ca084
   .form__container
     width: 100%
     background-color: $white

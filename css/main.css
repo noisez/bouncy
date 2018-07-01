@@ -57,7 +57,8 @@
   font-style: normal; }
 
 nav {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
 
 .header {
   height: 745px;
@@ -68,6 +69,9 @@ nav {
   padding-bottom: 75px; }
   .header h1, .header h2, .header p {
     color: #ffffff; }
+  .header__top {
+    display: flex;
+    justify-content: space-between; }
   .header .bouncy {
     font-family: 'BigJohn', sans-serif;
     font-size: 25px;
@@ -84,8 +88,8 @@ nav {
       border: 1px solid rgba(255, 255, 255, 0); }
       .header .menu .menu__item a {
         color: #ffffff; }
-      .header .menu .menu__item:hover {
-        border-color: white; }
+    .header .menu .menu-current {
+      border-color: white; }
     .header .menu .menu__icon {
       display: none;
       position: relative;
@@ -137,6 +141,9 @@ nav {
   .about .about__btn {
     border: 1px solid #333b46;
     color: #333b46; }
+    .about .about__btn:hover {
+      background-color: #000000;
+      color: #ffffff; }
 
 @media screen and (max-width: 992px) {
   .about__img {
@@ -176,11 +183,11 @@ nav {
   .projects .projects__text {
     margin-bottom: 60px; }
   .projects .projects__item-1 {
-    background: url("../img/bg-project-1.png") no-repeat center; }
+    background: url("../img/bg-project-1.jpg") no-repeat center; }
   .projects .projects__item-2 {
-    background: url("../img/bg2-project-2.png") no-repeat center; }
+    background: url("../img/bg2-project-2.jpg") no-repeat center; }
   .projects .projects__item-3 {
-    background: url("../img/bg2-project-3.png") no-repeat center; }
+    background: url("../img/bg2-project-3.jpg") no-repeat center; }
   .projects .projects__item {
     background-color: #19bd9a;
     height: 320px;
@@ -236,7 +243,7 @@ nav {
 
 .services .services__circles {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap; }
   .services .services__circles .circles__item {
     text-align: center; }
@@ -260,7 +267,7 @@ nav {
       background: url("../img/Ellipse-3.png") no-repeat; }
 
 .impres {
-  background: url("../img/bg-impres.png") no-repeat center;
+  background: url("../img/bg-impres.jpg") no-repeat center;
   background-size: cover;
   margin-top: 115px;
   padding-bottom: 80px; }
@@ -304,9 +311,7 @@ nav {
         font-size: 16px;
         padding: 10px;
         border-bottom: 2px solid #f3f3f3; }
-        .portfolio .portfolio__menu .portfolio__menu-item a:hover {
-          border-bottom: 2px solid #19bd9a; }
-      .portfolio .portfolio__menu .portfolio__menu-item .current {
+      .portfolio .portfolio__menu .portfolio__menu-item .portfolio__menu-current {
         border-bottom: 2px solid #19bd9a; }
   .portfolio .portfolio__grid {
     margin: auto; }
@@ -358,7 +363,7 @@ nav {
   .portfolio .portfolio__cta {
     margin-top: 35px;
     padding: 52px 0;
-    background: url("../img/bg-portfolio-cta.png") no-repeat center; }
+    background: url("../img/bg-portfolio-cta.jpg") no-repeat center; }
     .portfolio .portfolio__cta .portfolio__cta-text {
       margin-bottom: 30px; }
 
@@ -447,12 +452,14 @@ nav {
   .team__cta .team__cta-btn {
     position: relative;
     z-index: 1000; }
+    .team__cta .team__cta-btn:hover {
+      color: #000000; }
   .team__cta .team__cta-cover {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/bg-team_cta.png") no-repeat center;
+    background: url("../img/bg-team_cta.jpg") no-repeat center;
     background-size: cover;
     opacity: .2; }
 
@@ -680,7 +687,10 @@ nav {
     border: none;
     padding: 8px 45px;
     color: #ffffff;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .5s ease; }
+    .subscribe__submit:hover {
+      background-color: #1ca084; }
 
 @media screen and (max-width: 576px) {
   .subscribe__email {
@@ -699,13 +709,14 @@ nav {
   margin: 10px auto;
   transition: all .5s ease; }
   .contact__item:hover {
-    transform: scale(1.25); }
+    transform: scale(1.15);
+    box-shadow: #81868e 0 2px 12px 3px; }
   .contact__item p {
     text-transform: uppercase; }
     .contact__item p:first-child {
       color: #333b46; }
   .contact__item_img {
-    background: url("../img/contact-email.png") no-repeat center;
+    background: url("../img/contact-email.jpg") no-repeat center;
     background-size: cover;
     width: 285px;
     height: 145px; }
@@ -743,7 +754,10 @@ nav {
   height: 53px;
   border: none;
   color: #ffffff;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .5s ease; }
+  .contact__form_submit:hover {
+    background-color: #1ca084; }
 
 .contact .form__container {
   width: 100%;
@@ -845,7 +859,7 @@ nav {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: url("../img/bg-main.png");
+  background: url("../img/bg-main.jpg");
   overflow-x: hidden; }
 
 ul {
@@ -896,6 +910,9 @@ section {
   border-radius: 20px;
   border: 1px solid #ffffff;
   transition: all .5s ease; }
+  .btn:hover {
+    background-color: #ffffff;
+    color: #19bd9a; }
 
 .cta {
   color: #ffffff;
@@ -908,9 +925,12 @@ section {
   border-radius: 50%;
   background-color: #81868e;
   color: #ffffff;
-  transition: all .5s; }
+  transition: all .5s ease; }
   .pe7-icon:hover {
-    background-color: #19bd9a; }
+    transform: scale(1.1); }
+
+.current-icon {
+  background-color: #19bd9a; }
 
 .no-padding {
   padding: 0; }

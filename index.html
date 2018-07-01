@@ -7,7 +7,7 @@
     <meta name="description" content="Responsive HTML5 Bootstrap landing page">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/Icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Bouncy</title>
@@ -15,24 +15,20 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <p class="bouncy">BOUNCY</p>
-                </div>
-                <div class="col-10">
-                    <nav>
-                        <ul class="menu" id="myTopnav">
-                            <li class="menu__item"><a class="menu__link" href="#">Hello</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#team">Team</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
-                            <li class="menu__icon"><a id="menu__icon">&#9776;</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="header__top">
+                <p class="bouncy">BOUNCY</p>
+                <nav>
+                    <ul class="menu" id="myTopnav">
+                        <li class="menu__item menu-current"><a class="menu__link" href="#">Hello</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#team">Team</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+                        <li class="menu__icon"><a href="#" class="open-menu-btn" id="menu__icon">&#9776;</a></li>
+                    </ul>
+                </nav>
             </div>
             <h1 class="header__title">We Are Code Cafe</h1>
             <p class="header__text big">
@@ -63,7 +59,7 @@
                 <h3 class="section-title">Details about bouncy</h3>
                 <p class="section-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 <ul class="details__icons">
-                    <li class="icons__item"><a><i class="pe-7s-like pe7-icon"></i></a></li>
+                    <li class="icons__item"><a><i class="pe-7s-like pe7-icon current-icon"></i></a></li>
                     <li class="icons__item"><a><i class="pe-7s-mouse pe7-icon"></i></a></li>
                     <li class="icons__item"><a><i class="pe-7s-light pe7-icon"></i></a></li>
                 </ul>
@@ -159,7 +155,7 @@
                     <p class="impres__post">Creatice Director, <span>Code Cafe</span></p>
                 </div>
                 <div class="col-md-6 ml-auto d-none d-md-block">
-                    <img src="img/imac.png" alt="" class="impres__imac img-fluid">
+                    <img src="img/imac.jpg" alt="" class="impres__imac img-fluid">
                 </div>
             </div>
         </div>
@@ -169,13 +165,13 @@
             <h3 class="section-title">THE PORTFOLIO</h3>
             <p class="section-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui<br> blanditiis praesentium</p>
             <ul class="portfolio__menu">
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('all')">All Works</a></li>
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('print')">Print</a></li>
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('identity')">Identity</a></li>
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('branding')">Branding</a></li>
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('web')">Web</a></li>
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('html')">HTML</a></li>
-                <li class="portfolio__menu-item"><a onclick="portfSwitch('wordpress')">Wordpress</a></li>
+                <li class="portfolio__menu-item"><a class="portfolio__menu-current" onclick="portfSwitch('All Works')">All Works</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('Print')">Print</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('Identity')">Identity</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('Branding')">Branding</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('Web')">Web</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('HTML')">HTML</a></li>
+                <li class="portfolio__menu-item"><a onclick="portfSwitch('Wordpress')">Wordpress</a></li>
             </ul>
             <div class="portfolio__grid">
                 <div class="portfolio__photo print web grid-item">
@@ -235,7 +231,7 @@
                     </div>
                 </div>
                 <div class="portfolio__photo identity web grid-item">
-                    <img src="img/portfolio2-2.jpg" class="img-fluid" alt="">
+                    <img src="img/portfolio2-1.jpg" class="img-fluid" alt="">
                     <div class="portfolio__photo-cover">
                         <div class="photo__cover-content">
                             <p class="content__title">Title here</p>
@@ -249,7 +245,7 @@
                     </div>
                 </div>
                 <div class="portfolio__photo branding html grid-item">
-                    <img src="img/portfolio2-3.jpg" class="img-fluid" alt="">
+                    <img src="img/portfolio2-2.jpg" class="img-fluid" alt="">
                     <div class="portfolio__photo-cover">
                         <div class="photo__cover-content">
                             <p class="content__title">Title here</p>
@@ -263,7 +259,7 @@
                     </div>
                 </div>
                 <div class="portfolio__photo print html grid-item">
-                    <img src="img/portfolio2-1.jpg" class="img-fluid" alt="">
+                    <img src="img/portfolio2-3.jpg" class="img-fluid" alt="">
                     <div class="portfolio__photo-cover">
                         <div class="photo__cover-content">
                             <p class="content__title">Title here</p>
@@ -291,7 +287,7 @@
                     </div>
                 </div>
                 <div class="portfolio__photo branding web grid-item">
-                    <img src="img/portfolio3-2.jpg" class="img-fluid" alt="">
+                    <img src="img/portfolio3-1.jpg" class="img-fluid" alt="">
                     <div class="portfolio__photo-cover">
                         <div class="photo__cover-content">
                             <p class="content__title">Title here</p>
@@ -305,7 +301,7 @@
                     </div>
                 </div>
                 <div class="portfolio__photo print web grid-item">
-                    <img src="img/portfolio3-4.jpg" class="img-fluid" alt="">
+                    <img src="img/portfolio3-2.jpg" class="img-fluid" alt="">
                     <div class="portfolio__photo-cover">
                         <div class="photo__cover-content">
                             <p class="content__title">Title here</p>
@@ -333,7 +329,7 @@
                     </div>
                 </div>
                 <div class="portfolio__photo branding wordpress grid-item">
-                    <img src="img/portfolio3-1.jpg" class="img-fluid" alt="">
+                    <img src="img/portfolio3-4.jpg" class="img-fluid" alt="">
                     <div class="portfolio__photo-cover">
                         <div class="photo__cover-content">
                             <p class="content__title">Title here</p>
@@ -516,7 +512,7 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-lg-3 text-center">
-                                <img src="img/testimonials-img.png" class="testi__img" alt="">
+                                <img src="img/testimonials-img.jpg" class="testi__img" alt="">
                             </div>
                             <div class="col-lg-8">
                                 <p class="testi__text big">
@@ -530,7 +526,7 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-lg-3 text-center">
-                                <img src="img/testimonials-img.png" class="testi__img" alt="">
+                                <img src="img/testimonials-img.jpg" class="testi__img" alt="">
                             </div>
                             <div class="col-lg-8">
                                 <p class="testi__text big">
@@ -544,7 +540,7 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-lg-3 text-center">
-                                <img src="img/testimonials-img.png" class="testi__img" alt="">
+                                <img src="img/testimonials-img.jpg" class="testi__img" alt="">
                             </div>
                             <div class="col-lg-8">
                                 <p class="testi__text big">
@@ -562,7 +558,7 @@
     <section id="blog" class="blog">
         <div class="container">
             <ol class="blog__btns">
-                <li class="blog__btn btn-1"></li>
+                <li class="blog__btn btn-1 active"></li>
                 <li class="blog__btn btn-2"></li>
                 <li class="blog__btn btn-3"></li>
             </ol>
